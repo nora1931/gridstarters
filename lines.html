@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Css Grid</title>
@@ -30,16 +29,13 @@
 
         .item-b {
             grid-area: sidebar;
-            background-color: #a72828;
-            grid-column: span 2;
-
-
+            background-color: #5f9563;
         }
 
         .item-c {
             grid-area: main;
-            background-color: #5f9563;
-            grid-column: span 1;
+            background-color: #a72828;
+            grid-column: span 2;
 
         }
 
@@ -52,23 +48,20 @@
         @media screen and (min-width:768px) {
             .container {
                 grid-template-areas:
-                    "sidebar header"
-                    "main footer"
+                    "header main"
+                    "sidebar footer"
             }
         }
 
     </style>
-
 </head>
-
 <body>
-    <main class="container">
-        <div class="item item-a">A</div>
-        <div class="item item-b">B</div>
-        <div class="item item-c">C</div>
-        <div class="item item-d">D</div>
-    </main>
+   <main class="container">
+       <div class="item item-a">A</div>
+       <div class="item item-b">B</div>
+       <div class="item item-c">C</div>
+       <div class="item item-d">D</div>
+   </main>
 
 </body>
-
 </html>
